@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Escolha o tipo de mapa:</h1>
+        <label>
+            <input type="radio" name="mapType" value="colormetrico"> Mapa Colométrico
+        </label>
+        <label>
+            <input type="radio" name="mapType" value="interativo"> Mapa Interativo
+        </label>
+        <div id="yearInput" style="display: none;">
+            <label for="year">Escolha o ano (2018-2022):</label>
+            <select id="year">
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+            </select>
+            <button id="btnSubmit">Visualizar</button>
+        </div>
+        <div id="mapContainer" style="display: none;">
+            <div class="map-wrapper">
+                <img id="mapImg" src="" alt="Mapa">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

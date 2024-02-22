@@ -1,0 +1,22 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.map-wrapper {
+    width: 80%; /* Largura da área onde a imagem será exibida */
+    max-height: 300px; /* Altura máxima para a moldura da imagem */
+    overflow: auto; /* Adiciona barras de rolagem conforme necessário */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    border: 2px solid #ccc; /* Adiciona uma borda para a moldura da imagem */
+    display: flex; /* Usa flexbox para alinhar a imagem verticalmente */
+    align-items: center; /* Centraliza verticalmente a imagem */
+    justify-content: center; /* Centraliza horizontalmente a imagem */
+}
+
+#mapImg {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da div */
+    max-height: 100%; /* Garante que a imagem não ultrapasse a altura da div */
+    display: block; /* Evita que a imagem tenha espaços em branco extras */
+    margin: auto; /* Centraliza a imagem horizontalmente */
+}
