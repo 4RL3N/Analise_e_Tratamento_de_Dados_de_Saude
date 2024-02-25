@@ -16,6 +16,8 @@ Este repositório contém o projeto desenvolvido para a disciplina de Contabilid
 
 - `webbrowser`: Permite exibir documentos web aos usuários.
 
+- `Tkinter`: É a biblioteca padrão do Python para a criação de interfaces gráficas de usuário (GUIs) usando o kit de ferramentas Tcl/Tk.
+
 - `pandas`: Oferece estruturas de dados e ferramentas de análise de dados poderosas e fáceis de usar.
 
 - `GeoPandas`: É um projeto para adicionar suporte para dados geográficos aos objetos pandas. O objetivo do GeoPandas é facilitar o trabalho com dados geoespaciais em Python. Ele combina as capacidades de pandas e shapely, fornecendo operações geoespaciais em pandas e uma interface de alto nível para várias geometrias para shapely.
