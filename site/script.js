@@ -21,9 +21,27 @@ document.getElementById("btnSubmit").addEventListener("click", function() {
 
     // Se o tipo de mapa selecionado for "colormetrico", exibe uma imagem no elemento com o ID "mapContainer"
     if (mapType === "colormetrico") {
-        document.getElementById("mapContainer").innerHTML = `<img src="mapa_resultado${selectedYear}.png" alt="Mapa">`;
-        document.getElementById("mapContainer").style.display = "block";
-    } 
+        // Obtém a referência ao contêiner do mapa
+        var mapContainer = document.getElementById("mapContainer");
+    
+        // Remove qualquer elemento filho existente no contêiner do mapa
+        while (mapContainer.firstChild) {
+            mapContainer.removeChild(mapContainer.firstChild);
+        }
+    
+        // Cria um título para exibir a média de empenhado
+        var titulo = document.createElement("h2");
+        titulo.textContent = "Média de empenhado";
+    
+        // Adiciona o título ao contêiner do mapa
+        mapContainer.appendChild(titulo);
+    
+        // Adiciona a nova imagem ao contêiner do mapa
+        mapContainer.innerHTML += `<img src="mapa_resultado${selectedYear}.png" alt="Mapa">`;
+        mapContainer.style.display = "block";
+    }
+    
+    
     // Se o tipo de mapa selecionado for "interativo", redireciona para uma página HTML específica
     else if (mapType === "interativo") {
         window.location.href = `interativo_${selectedYear}.html`;
